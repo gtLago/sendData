@@ -14,6 +14,7 @@ def envioCentral(fileName):
         remotepath = '/home/lago/lago2018/UVGSUR/'+ fileName +''
         localpath = '/home/lagouvg/data/'+ fileName +''
         sftp.put(localpath, remotepath)
+        print("ARCHIVO ENVIADO A UNIVERSIDAD DEL VALLE CENTRAL")
         sftp.close()
         ssh.close()
     except Exception, e:
